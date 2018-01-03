@@ -1,6 +1,8 @@
 The goal of this project is to provide a repository that contains scalable vector graphics (svg) content for open usage by our research group and the greater public community.
 
-All content in this repo should be contributed with the intension of being openly shared and compatible with the Creative Commons Public domain license [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/).
+All content in this repo should be contributed with the intention of being openly shared and compatible with the Creative Commons Public domain license [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/).
+
+This repo will be made public after initial setup.
 
 ### What is svg?
 
@@ -13,4 +15,6 @@ The type of svg graphics added to this git repo should primarily be a mix of sim
 
 Graphics from here can then be openly patched into more complex figure/svg graphics for other projects.
 
-All are welcome to contribute. The free and open source [Inkscape](https://inkscape.org) drawing program is highly recommended for creating or editing svg graphics figures.
+All are welcome to contribute. The free and open source [Inkscape](https://inkscape.org) drawing program is highly recommended for creating or editing svg graphics figures. Libreoffice has some nice diagramming tools as well. Graphviz (dot language) is good for diagrams of networks.
+
+<!-- Recommended workflow is to clone this repo locally, then make a working branch for yourself separate from the master branch while working on collaborative changes or adding new content. Then merge the changes with master. -->
