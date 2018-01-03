@@ -1,0 +1,28 @@
+digraph g {
+    //node [shape=plaintext];
+    node [fontname="sans-serif"];
+    edge [arrowhead="o" fontsize=11.0 fontname="sans-serif"]
+
+    ctx [label="cerebral cortex"]
+    p [label="putamen"]
+    gpi [label="GP interna"]
+    gpe [label="GP externa"]
+    thal [label="VA/VL thalamus"]
+    snc [label="substantia nigra pars compacta"]
+    stn [label="subthalmic nucleus"]
+
+    // direct pathway and common
+    ctx -> p [label="(+) glutamate"]
+    p -> gpi [label="(-) GABA" arrowhead="dot"]
+    gpi -> thal [label="(-) GABA" arrowhead="dot"]
+    thal -> ctx [label="(+) glutamate"]
+    snc -> p [label="(+) dopamine"]
+    
+    // indirect pathway
+    p -> gpe [label="(-) GABA" arrowhead="dot"]
+    gpe -> stn [label="(-) GABA" arrowhead="dot"]
+    stn -> gpi [label="(+) glutamate"]
+    //stn -> gpi [label="disease:
+    //hemiballismus" style="dotted" color="red"]  //hemiballismus disease
+    snc -> p [label="(-) dopamine" arrowhead="dot"]
+}
