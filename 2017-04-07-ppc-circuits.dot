@@ -1,0 +1,98 @@
+digraph g {
+    node [shape="cylinder"];
+    //node [shape="box"];
+    node [fontname="sans-serif"];
+    edge [arrowhead="o" fontsize=11.0 fontname="sans-serif"]
+
+    //pfc [label="prefrontal cortex (BA 9,10)"]
+    ofc [label="orbital frontal ctx (BA 11,47)"]
+    m2 [label="M2 (BA 6), FEF (BA 8), Cg (BA 8, 24)"] 
+    //cg [label="anterior cingulate (BA 9,10,11,24,32)"]
+    //bro [label="Broca's area (BA 44,45"]
+    //wer [label="Wernicke's area (BA 39,40)"]
+    m1 [label="M1 (BA 4)"]
+    //ins [label="Insular ctx (BA 13,14)"]
+    //gus [label="Gustatory ctx (BA 43)"]
+    s1 [label="S1 (BA 1,2,3b,3a)"]
+    //s2 [label="S2 (BA 40)"]
+    a1 [label="A1 (BA 41,42)"]
+    //a2 [label="A2 (BA 22)"]
+    ppc [label="PPC (BA 5,7,39,40a; 18a,2)"]
+    vis [label="V2 (BA 18b,18a), V1 (BA 17)"]
+    rsa [label="RSA (BA 29d,29c,29b)"]
+    ent [label="Ent ctx"]
+    //por [label="TEa/POR (BA 36p)"]
+    //lec [label="Lateral ent ctx"]
+    //mec [label="Medial ent ctx"]
+    //ect [label="Ectorhinal (BA 36)"]
+    //per [label="Perirhinal (BA 35)"]
+    hp [label="Hippocampus (BA 27,28,35,36)"]
+    ld [label="LD/LP/pulvinar thalamus"]
+    ad [label="AD thalamus"]
+    sc [label="Superior colliculus"]
+    str [label="Dorsal striatum"]
+
+    ld -> ppc
+    ppc -> rsa
+    rsa -> ppc
+    ent -> rsa
+    ent -> hp
+    hp -> ent
+    vis -> ppc
+    vis -> rsa
+    vis -> ent
+    ad -> rsa
+    vis -> m2
+    ppc -> m2
+    m2 -> ppc
+    m2 -> m1
+    a1 -> ppc
+    s1 -> ppc
+    s1 -> m1
+    s1 -> m2
+    ofc -> ppc
+    ppc -> sc
+    ppc -> str
+    ppc -> ld
+    sc -> ld
+    vis -> ld //[^Oh:2014]
+    
+    //limbic pathway is assoc with hippocampal formation and includes RSA, Acc, and thalamic nuclei AV, AD, LD [^Oh:2014]
+    //motor pathway is primary and secondary motor cortex (MOp and MOs) and thalamic VAL nucleus
+    //visual pathway is primary and assoc visual cortex (VISp, VISam, VISal/l, and TEa) and thalamic nuclei LGd, LGv, and LP [^Oh:2014]
+    //somatosensory pathway is primary and assoc somatosensory cortex (SSp and SSs) and thalamic nuclei VPM, VPL and PO. SSp and VPM/VPL for incoming somatosensory information, SSs for higher-order information processing and PO modulates all SS cortical areas [^Oh:2014]
+    //gustatory and visceral pathway (GU/VISC cortical areas and thalamic VPMpc/VPLpc nuclei) [^Oh:2014]
+    //auditory pathway (primary and secondary AUD areas and thalamic MG nuclei) [^Oh:2014]
+    //prefrontal pathway medial, orbital and lateral prefrontal cortical areas (including PL, ILA, ORB and AI) and medial, midline, intralaminar nuclei of thalamus (MD, VM, AM, PVT, CM, RH, RE and PF) [^Oh:2014]
+    //reticular nucleus (RT) receives input from all pathways, getting cortico-thalamic and thalamo-cortical projections. RT output is only within thalamus [^Oh:2014]. RT==TRN. All GABAergic neurons, in a thin layer wrapping around most of and projecting within the thalamus. TRN neurons rhythmic phasic burst firing during sleep, more continuous during REM, and tonic low frequency during wake
+    //anterior cingulate link between prefrontal and limbic pathways [^Oh:2014]
+    //PTLp (PPC) and LD link between visual and limbic pathways [^Oh:2014]
+    //PTLp gets hardly any thalamic input [^Oh:2014] but projects robustly to LP and LD. LD receives input from all visual areas, but projects exclusively to limbic areas
+    //thalamic nuclei PO, VM, CM, RH and RE have wide, distributed but weak projections across wide cortical areas [^Oh:2014]
+
+    //melanopsin RGCs project to lateral posterior thalamic nuclei/pulvinar in mouse [^Allen:2016]
+    //transthalamic relays? cortical-thalamic-cortical loops? [^Sherman:2016]
+
+
+    subgraph cluster_0 { 
+    ld; 
+    ad;
+    //color="lightgrey"
+    style="dotted"
+    } 
+
+
+    subgraph cluster_1 { 
+    s1; 
+    a1;
+    vis;
+    //color="lightgrey"
+    style="dotted"
+    } 
+
+
+    // direct pathway and common
+    // ctx -> p [label="(+) glutamate"]
+    // p -> gpi [label="(-) GABA" arrowhead="dot"]
+    //hemiballismus" style="dotted" color="red"]  //hemiballismus disease
+}
