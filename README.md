@@ -24,7 +24,7 @@ With the open source graph visualization software [GraphViz](http://www.graphviz
 `dot ppc-circuits.dot -Tsvg -o ppc-circuits.svg`
 
 <figure>
-<img src="basal-ganglia-circuits.svg" width=300px><img src="ppc-circuits.svg" width=300px>
+<img src="basal-ganglia-circuits.svg" width="300px"><img src="ppc-circuits.svg" width="300px">
 <figcaption>Sample content: Graphs of posterior parietal cortex and basal ganglia connectivity.</figcaption>
 </figure>
 
