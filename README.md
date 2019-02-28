@@ -24,7 +24,19 @@ With the open source graph visualization software [GraphViz](http://www.graphviz
 `dot ppc-circuits.dot -Tsvg -o ppc-circuits.svg`
 
 <figure>
-<img src="basal-ganglia-circuits.svg" width="300px"><img src="ppc-circuits.svg" width="300px">
-<figcaption>Sample content: Graphs of posterior parietal cortex and basal ganglia connectivity.</figcaption>
+<img src="basal-ganglia-circuits.svg" width="300px"><img src="fig_motor-neuron-key.png" width="300px">
+<figcaption>Sample content.</figcaption>
 </figure>
+
+html alone:
+
+<img src="fig_motor-neuron-key.png" width="300px">
+
+full link: 
+
+<img src="https://git.ackmanlab.com/jackman/svg-assets/src/branch/master/fig_motor-neuron-key.png" width="300px">
+
+md link:
+
+![](fig_motor-neuron-key.png)
 
