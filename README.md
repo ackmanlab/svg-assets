@@ -1,8 +1,6 @@
-The goal of this project is to provide a repository that contains scalable vector graphics (svg) content for open usage by our research group and the greater public community.
+This repository contains scalable vector graphics (svg) content for open usage by our research group and the greater public community.
 
-All content in this repo should be contributed with the intention of being openly shared and compatible with the Creative Commons Public domain license [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/).
-
-This repo will be made public after initial setup.
+Content in this repo should be contributed with the intention of being openly shared and compatible with the Creative Commons Public domain license [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) to the greatest extent possible. Please feel free to contribute.
 
 ## What is svg?
 
@@ -24,3 +22,9 @@ All are welcome to contribute. The free and open source [Inkscape](https://inksc
 With the open source graph visualization software [GraphViz](http://www.graphviz.org/) locally installed, the plain text `.dot` files can be edited and then rendered with a command like this:  
 
 `dot ppc-circuits.dot -Tsvg -o ppc-circuits.svg`
+
+<figure>
+<img src="basal-ganglia-circuits.svg" width=300px><img src="ppc-circuits.svg" width=300px>
+<figcaption>Sample content: Graphs of posterior parietal cortex and basal ganglia connectivity.</figcaption>
+</figure>
+
