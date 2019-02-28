@@ -33,10 +33,23 @@ Fig caption test with md style links:
 <figcaption>Sample content.</figcaption>
 </div>
 
+
+Fig caption test with html img style links:
+
+<div>
+
+<img src="basal-ganglia-circuits.svg" width="300px">
+<img src="fig_motor-neuron-key.png" width="300px">
+
+<figcaption>Sample content.</figcaption>
+</div>
+
+<Paste>
+
+
 html style img links `<img src="filename">` with or without absolute urls doesn't work with this git server rendering app:  
 
 <img src="fig_motor-neuron-key.png" width="300px">
-<img src="https://git.ackmanlab.com/jackman/svg-assets/src/branch/master/fig_motor-neuron-key.png" width="300px">
 
 md style links `![](filename)` work with pngs but not svgs with this system:  
 
