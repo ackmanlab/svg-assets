@@ -23,20 +23,23 @@ With the open source graph visualization software [GraphViz](http://www.graphviz
 
 `dot ppc-circuits.dot -Tsvg -o ppc-circuits.svg`
 
-<figure>
-<img src="basal-ganglia-circuits.svg" width="300px"><img src="fig_motor-neuron-key.png" width="300px">
-<figcaption>Sample content.</figcaption>
-</figure>
+Fig caption test with md style links:
 
-html alone:
+<div>
+
+![](basal-ganglia-circuits.svg)  
+![](fig_motor-neuron-key.png)  
+
+<figcaption>Sample content.</figcaption>
+</div>
+
+html style img links `<img src="filename">` with or without absolute urls doesn't work with this git server rendering app:  
 
 <img src="fig_motor-neuron-key.png" width="300px">
-
-full link: 
-
 <img src="https://git.ackmanlab.com/jackman/svg-assets/src/branch/master/fig_motor-neuron-key.png" width="300px">
 
-md link:
+But md style links `![](filename)` work with svgs and pngs:
 
-![](fig_motor-neuron-key.png)
+![](basal-ganglia-circuits.svg)  
+![](fig_motor-neuron-key.png)  
 
