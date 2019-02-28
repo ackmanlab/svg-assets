@@ -38,8 +38,11 @@ html style img links `<img src="filename">` with or without absolute urls doesn'
 <img src="fig_motor-neuron-key.png" width="300px">
 <img src="https://git.ackmanlab.com/jackman/svg-assets/src/branch/master/fig_motor-neuron-key.png" width="300px">
 
-But md style links `![](filename)` work with svgs and pngs:
+md style links `![](filename)` work with pngs but not svgs with this system:  
 
-![](basal-ganglia-circuits.svg)  
-![](fig_motor-neuron-key.png)  
+![svg test](basal-ganglia-circuits.svg)
+
+![png test](fig_motor-neuron-key.png)
+
+
 
